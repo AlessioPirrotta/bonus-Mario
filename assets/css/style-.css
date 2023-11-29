@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+html{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+body{
+    background-image: url(../img/71d63e98afd39d84fa8115d681252c9dab32eef9_2_690x408.jpeg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position:center
+}
+
+.toad{
+   scale: .3;
+   position: absolute;
+   top: 200px;
+   left: 0px;
+   animation-name: gotoad;
+   animation-duration: 5s; 
+   animation-timing-function: ease-out;
+   animation-direction: normal;
+   animation-iteration-count: infinite ;
+}
+
+.mario{
+    scale:1.2 ;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    animation-name: gomario;
+    animation-duration: 3s; 
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-iteration-count:infinite ;
+ }
+
+ .luigi{
+    scale:1.2 ;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    animation-name: goluigi;
+    animation-duration: 4s; 
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-iteration-count:infinite ;
+ }
+
+
+
+
+
+
+@keyframes gotoad{
+    from{ left: -300px; }
+    to{ left: 2000px;}
+}
+
+
+@keyframes gomario{
+    0%{ left: -300px; }
+    10%{top: 500px;}
+    30%{ top:400px}
+    50%{top: 400px;}
+    100%{ left: 2000px;top:500px}
+}
+
+@keyframes goluigi{
+    from{ left: -300px; }
+    to{ left: 2000px;}
+}
+
